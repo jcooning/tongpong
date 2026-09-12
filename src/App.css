@@ -1,0 +1,22 @@
+.app {
+  height: 100%;
+  width: 100%;
+  max-width: 430px;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  /* 데스크톱에서 카드처럼 보이도록 */
+  box-shadow: 0 0 0 1px var(--line), 0 8px 32px rgba(27, 24, 21, .10);
+}
+
+.content {
+  flex: 1;
+  min-height: 0; /* flex 자식이 부모 높이 초과하지 않도록 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}

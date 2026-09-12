@@ -1,0 +1,46 @@
+.ruler {
+  margin-top: var(--s-3);
+  position: relative;
+  height: 26px;
+}
+
+.ruler-ticks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 11px;
+}
+
+.ruler-ticks i {
+  display: block;
+  width: 1px;
+  background: var(--line);
+  height: 5px;
+}
+
+.ruler-ticks i.mid {
+  height: 9px;
+}
+
+.ruler-mark {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 13px;
+  background: var(--accent);
+  border-radius: 1px;
+  transform: translateX(-50%);
+  transition: left var(--dur-base) var(--ease);
+}
+
+.ruler-legend {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--s-1);
+  font-size: 10px;
+  color: var(--ink-35);
+}
+
+.ruler-legend .now {
+  color: var(--accent);
+}

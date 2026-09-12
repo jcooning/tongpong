@@ -1,0 +1,31 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  overscroll-behavior: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #E9E4DA; /* 430px 밖 데스크톱 배경 */
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가운데 정렬 */
+}
+
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+}
